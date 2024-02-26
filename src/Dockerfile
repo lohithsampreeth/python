@@ -5,8 +5,7 @@ ENV build-date 24apr2023a
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+
 
 COPY . .
 RUN chmod g+r -R sample-app/wsgi.py ./welcome
