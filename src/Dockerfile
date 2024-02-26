@@ -9,7 +9,7 @@ COPY src/requirements.txt .
 RUN pip install -r requirements.txt
 
 COPY . .
-RUN chmod g+r -R sample-app/wsgi.py ./welcome
+RUN chmod g+r -R sample-app/wsgi.py sr/welcome
 
 EXPOSE 8000
 
